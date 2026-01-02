@@ -1,0 +1,10 @@
+# Standard documentation repo ignores
+*.pyc
+__pycache__/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
