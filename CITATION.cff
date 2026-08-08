@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use or discuss this framework, please cite the working paper described below."
+title: "The Demure Fulcrum"
+type: software
+authors:
+  - family-names: "Demure"
+    given-names: "Daniel"
+repository-code: "https://github.com/DanielDemure/The-Demure-Fulcrum"
+url: "https://github.com/DanielDemure/The-Demure-Fulcrum"
+date-released: "2026-08-08"
+license: "CC-BY-4.0"
+abstract: >-
+  A repository for The Demure Fulcrum, a conceptual framework and research
+  agenda proposing negotiation as an agency-preserving higher-order
+  meta-response under threat. The work is a working paper and has not been
+  peer reviewed or empirically validated as a distinct psychological construct.
+keywords:
+  - agency
+  - negotiation
+  - threat response
+  - coping
+  - appraisal
+  - behavioural science
+  - game transformation
+preferred-citation:
+  type: article
+  title: "The Demure Fulcrum: Negotiation as an Agency-Preserving Meta-Response Under Threat"
+  authors:
+    - family-names: "Demure"
+      given-names: "Daniel"
+  year: 2026
+  month: 8
+  url: "https://github.com/DanielDemure/The-Demure-Fulcrum/blob/main/paper/The_Demure_Fulcrum_Academic_Paper.md"
+  notes: "A Conceptual Framework and Research Agenda — Working Paper, Not Peer Reviewed"
