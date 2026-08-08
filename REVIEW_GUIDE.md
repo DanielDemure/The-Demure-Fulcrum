@@ -28,25 +28,32 @@ The Demure Fulcrum is a **working conceptual paper, not a peer-reviewed or empir
 8. **Evidence sequencing**  
    Is behavioural construct validation appropriately prior to clinical, developmental, endocrine, EEG, or neuroimaging claims? Which secondary hypothesis is mature enough to test first?
 
-9. **Evidence calibration**  
-   Which claims are supported by the cited literature, which are only plausible inferences, and which require direct study?
+9. **Simulation validity**  
+   Does [`simulations/hexure_ipd_protocol.md`](simulations/hexure_ipd_protocol.md) specify a fair comparison? Are `NEG-v0.1`, reputation, rewiring, information access, costs, shocks, ablations, and held-out conditions defined well enough to prevent favourable retuning after results are seen?
+
+10. **Simulation harms and alternative explanations**  
+    Could apparent cooperation gains be caused by exclusion, centralised reputation, privileged information, degree concentration, or cost-free partner choice? Are false sanctions and power concentration treated as outcomes rather than ignored side effects?
+
+11. **Evidence calibration**  
+    Which claims are supported by the cited literature, which are only plausible inferences, and which require direct study?
 
 ## How to review
 
-The repository's documented response to the latest supplied critique is available at [`reviews/2026-08-08-external-review-response.md`](reviews/2026-08-08-external-review-response.md). Reviewers are encouraged to challenge both the external recommendations and the author's integration decisions.
+The repository's documented response to the supplied critique is available at [`reviews/2026-08-08-external-review-response.md`](reviews/2026-08-08-external-review-response.md). Reviewers are encouraged to challenge both the external recommendations and the author's integration decisions.
 
 Open a GitHub issue with one primary claim per issue. Please include:
 
-- the section and exact sentence or construct being challenged;
-- the type of concern: definition, evidence, logic, ethics, measurement, source, or presentation;
+- the section and exact sentence, parameter, construct, or strategy rule being challenged;
+- the type of concern: definition, evidence, logic, ethics, measurement, source, simulation, or presentation;
 - a proposed correction or a source that creates the conflict;
-- whether the concern affects the core construct or only an application.
+- whether the concern affects the core construct, an extension, or only an application;
+- for computational concerns, a minimal failing example or parameter condition where possible.
 
 Strong negative reviews are useful. The project should become narrower or be rejected if evidence does not support distinctiveness.
 
 ## Review scope
 
-The core working paper and three research companions are the main scholarly scope. [`applications/hexure.md`](applications/hexure.md) is a speculative application and should not be treated as evidence for the framework.
+The core working paper and three research companions are the main scholarly scope. [`applications/hexure.md`](applications/hexure.md) is a speculative application and should not be treated as evidence for the framework. The files under [`simulations/`](simulations/) test a formal strategy only; they do not constitute psychological validation.
 
 ## Author response standard
 
@@ -57,4 +64,4 @@ Responses should classify feedback as:
 - **not accepted** — response explains the evidentiary or conceptual reason;
 - **requires evidence** — issue becomes an explicit research question.
 
-No criticism should be dismissed merely because it challenges the name or central intuition.
+No criticism should be dismissed merely because it challenges the name, central intuition, or a computational result.
