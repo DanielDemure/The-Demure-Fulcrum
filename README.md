@@ -1,6 +1,15 @@
 # The Demure Fulcrum
 
-![The Demure Fulcrum — negotiation as an agency-preserving meta-response under threat](assets/demure_fulcrum_banner.jpg)
+<p align="center">
+  <img src="assets/demure_fulcrum_banner.svg" alt="The Demure Fulcrum — constrained threat conditions transformed into negotiated possibilities through a central fulcrum" width="100%" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/DanielDemure/The-Demure-Fulcrum/actions/workflows/build-paper.yml"><img alt="Build and validate working paper" src="https://github.com/DanielDemure/The-Demure-Fulcrum/actions/workflows/build-paper.yml/badge.svg" /></a>
+  <img alt="Status: Working Paper" src="https://img.shields.io/badge/status-working%20paper-356a9a" />
+  <img alt="Not peer reviewed" src="https://img.shields.io/badge/peer%20review-not%20yet-lightgrey" />
+  <img alt="License: CC BY 4.0" src="https://img.shields.io/badge/license-CC%20BY%204.0-b68a45" />
+</p>
 
 > **Working conceptual paper — not peer reviewed**  
 > The framework has not been empirically validated as a distinct psychological, clinical, autonomic, or neurobiological response system.
@@ -12,7 +21,7 @@
 - a first-order response selects an action within the situation as currently structured;
 - a negotiation meta-response attempts to change the situation's options, constraints, information, commitments, timing, participants, or payoffs.
 
-The revised framework does **not** present negotiation as a demonstrated fourth reflex equivalent to fight, flight, or freeze. It defines a testable construct, specifies where it should and should not apply, compares it with adjacent concepts, and sets out conditions under which evidence should weaken or reject it.
+The framework does **not** present negotiation as a demonstrated fourth reflex equivalent to fight, flight, or freeze. It defines a testable construct, specifies where it should and should not apply, compares it with adjacent concepts, and states which findings should weaken or reject it.
 
 ## Core definition
 
@@ -52,12 +61,20 @@ The PDF is generated reproducibly from the Markdown and shared BibTeX database b
 - [Construct definition, formal model, and empirical designs](research/02_construct_and_formal_model.md)
 - [Cultural and philosophical illustrations](research/03_cultural_and_philosophical_illustrations.md)
 
-### Application and provenance
+### Simulation protocol
+
+- [Simulation programme overview](simulations/README.md)
+- [Pre-registration protocol for a negotiation-inspired IPD strategy](simulations/hexure_ipd_protocol.md)
+
+The protocol specifies the game, network topology, comparison strategies, dynamic rewiring, outcome variables, statistical analysis, ablations, and rejection conditions. **No simulation results are reported yet.** A future result would evaluate the formalised strategy under the tested conditions; it would not validate the psychological framework.
+
+### Application, review, and provenance
 
 - [Hexure: speculative application note](applications/hexure.md)
+- [Response to the 8 August 2026 external review](reviews/2026-08-08-external-review-response.md)
 - [Concept provenance and revision history](provenance/README.md)
 
-Hexure is deliberately separated from the evidentiary core. Network design, strategic intermediation, ethical commitments, and personal anecdotes do not validate the psychological framework.
+Hexure is deliberately separated from the evidentiary core. Network design, simulation results, strategic intermediation, ethical commitments, and personal anecdotes do not validate the psychological construct.
 
 ## What changed in the 2026 reconstruction?
 
@@ -66,10 +83,11 @@ Hexure is deliberately separated from the evidentiary core. Network design, stra
 - Negotiation is distinguished from appeasement, tend-and-befriend, reappraisal, problem-focused coping, assertiveness, persuasion, and bargaining skill.
 - A formal `G → G′` model describes attempts to transform the game rather than merely choose within it.
 - Six core behavioural predictions, rival hypotheses, disconfirmation criteria, and a staged research programme are included.
-- A second review cycle adds four explicit forms and secondary developmental, cross-cultural, network, expertise, and psychophysiological hypotheses without predeclaring biomarkers or universal thresholds.
+- Four explicit forms and secondary developmental, cross-cultural, network, expertise, and psychophysiological hypotheses are included without predeclaring biomarkers or universal thresholds.
+- A formal simulation protocol now makes the network-strategy proposal reproducible and falsifiable without calling it psychological validation.
 - Polyvagal Theory is treated as contested and non-essential.
 - Cultural material is labelled illustrative rather than evidentiary.
-- The original weak and placeholder reference list is replaced by a curated scholarly bibliography.
+- Weak and placeholder references are replaced by a curated scholarly bibliography.
 - The twenty-trade anecdote is no longer described as validation.
 
 See the full [`CHANGELOG.md`](CHANGELOG.md).
@@ -85,6 +103,7 @@ The framework earns scientific value only if future research can show:
 - distinction from adjacent constructs;
 - incremental predictive validity;
 - meaningful cross-cultural applicability;
+- robustness to power asymmetry and safety constraints;
 - and willingness to accept disconfirming results.
 
 ## Review and contribution
@@ -92,21 +111,21 @@ The framework earns scientific value only if future research can show:
 Critical review is explicitly invited.
 
 - [Focused review questions](REVIEW_GUIDE.md)
-- [Response to the 8 August 2026 external review](reviews/2026-08-08-external-review-response.md)
 - [Contribution instructions](CONTRIBUTING.md)
 - [Shared BibTeX bibliography](references/references.bib)
 
-The most useful contribution may be a well-supported argument that the construct is redundant, incorrectly bounded, culturally narrow, or unsafe in a particular context.
+The most useful contribution may be a well-supported argument that the construct is redundant, incorrectly bounded, culturally narrow, unsafe in a particular context, or not improved by its formal model.
 
 ## Reproducible build
 
 ```bash
 python -m pip install reportlab pyyaml pypdf
+python -m unittest discover -s tests -p "test_*.py"
 python scripts/build_pdf.py
 python scripts/validate_repo.py
 ```
 
-The validator checks required files, citation keys, weak source domains, local links, status language, construct sections, obsolete research paths, CFF metadata, and the generated PDF.
+The validator checks required files, the SVG banner, citation keys, weak source domains, local links, status language, construct sections, simulation status, CFF metadata, and the generated PDF.
 
 ## Citation
 
@@ -123,4 +142,4 @@ No DOI has yet been assigned.
 
 ## Licence
 
-Original scholarly text, diagrams, and documentation are licensed under the [Creative Commons Attribution 4.0 International Licence](LICENSE). Third-party works and referenced publications remain subject to their respective rights.
+Original scholarly text, diagrams, and documentation are licensed under the [Creative Commons Attribution 4.0 International Licence](LICENSE). Future simulation software may use a separate software licence when explicitly stated. Third-party works and referenced publications remain subject to their respective rights.
