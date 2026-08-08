@@ -8,6 +8,13 @@ on:
       - ".github/migrations/apply_review_integration.py"
       - ".github/workflows/apply-review-integration.yml"
       - "assets/**"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - ".github/migrations/apply_review_integration.py"
+      - ".github/workflows/apply-review-integration.yml"
+      - "assets/**"
   workflow_dispatch:
 
 permissions:
@@ -21,6 +28,7 @@ jobs:
       - name: Check out review-integration branch
         uses: actions/checkout@v4
         with:
+          ref: revision/2026-review-integration
           fetch-depth: 0
 
       - name: Set up Python
