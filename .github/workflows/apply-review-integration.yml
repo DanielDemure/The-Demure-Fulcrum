@@ -36,18 +36,31 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Scope claim preflight to substantive documents
+      - name: Scope migration to substantive repository content
         run: |
           python - <<'PY'
           from pathlib import Path
 
           path = Path('.github/migrations/apply_review_integration.py')
           text = path.read_text(encoding='utf-8')
-          old = '    combined = "\\n".join(changes.values()).lower()\n'
-          new = '''    substantive_paths = (\n        "paper/The_Demure_Fulcrum_Academic_Paper.md",\n        "research/02_construct_and_formal_model.md",\n        "research/03_cultural_and_philosophical_illustrations.md",\n        "applications/hexure.md",\n        "README.md",\n    )\n    combined = "\\n".join(changes[rel] for rel in substantive_paths).lower()\n'''
-          if text.count(old) != 1:
+
+          old_claim = '    combined = "\\n".join(changes.values()).lower()\n'
+          new_claim = '''    substantive_paths = (\n        "paper/The_Demure_Fulcrum_Academic_Paper.md",\n        "research/02_construct_and_formal_model.md",\n        "research/03_cultural_and_philosophical_illustrations.md",\n        "applications/hexure.md",\n        "README.md",\n    )\n    combined = "\\n".join(changes[rel] for rel in substantive_paths).lower()\n'''
+          if text.count(old_claim) != 1:
               raise SystemExit('Expected claim-scan statement not found exactly once')
-          path.write_text(text.replace(old, new, 1), encoding='utf-8')
+          text = text.replace(old_claim, new_claim, 1)
+
+          workflow_entry = '        ".github/workflows/build-paper.yml": transform_workflow(read(".github/workflows/build-paper.yml")),\n'
+          if text.count(workflow_entry) != 1:
+              raise SystemExit('Expected workflow transformation entry not found exactly once')
+          text = text.replace(workflow_entry, '', 1)
+
+          workflow_checks = '''    if '      - "assets/**"' not in changes[".github/workflows/build-paper.yml"]:\n        raise RuntimeError("workflow output lacks assets path filter")\n    if '      - "reviews/**"' not in changes[".github/workflows/build-paper.yml"]:\n        raise RuntimeError("workflow output lacks reviews path filter")\n'''
+          if text.count(workflow_checks) != 1:
+              raise SystemExit('Expected workflow validation block not found exactly once')
+          text = text.replace(workflow_checks, '', 1)
+
+          path.write_text(text, encoding='utf-8')
           PY
 
       - name: Validate migration inputs and outputs
@@ -72,10 +85,9 @@ jobs:
       - name: Validate complete repository
         run: python scripts/validate_repo.py
 
-      - name: Remove one-time migration machinery
+      - name: Remove one-time migration script
         run: |
           rm -f .github/migrations/apply_review_integration.py
-          rm -f .github/workflows/apply-review-integration.yml
           rmdir .github/migrations 2>/dev/null || true
 
       - name: Commit integrated review and generated PDF
