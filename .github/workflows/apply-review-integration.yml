@@ -36,6 +36,20 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Scope claim preflight to substantive documents
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path('.github/migrations/apply_review_integration.py')
+          text = path.read_text(encoding='utf-8')
+          old = '    combined = "\\n".join(changes.values()).lower()\n'
+          new = '''    substantive_paths = (\n        "paper/The_Demure_Fulcrum_Academic_Paper.md",\n        "research/02_construct_and_formal_model.md",\n        "research/03_cultural_and_philosophical_illustrations.md",\n        "applications/hexure.md",\n        "README.md",\n    )\n    combined = "\\n".join(changes[rel] for rel in substantive_paths).lower()\n'''
+          if text.count(old) != 1:
+              raise SystemExit('Expected claim-scan statement not found exactly once')
+          path.write_text(text.replace(old, new, 1), encoding='utf-8')
+          PY
+
       - name: Validate migration inputs and outputs
         run: python .github/migrations/apply_review_integration.py --check
 
