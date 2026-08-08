@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - revision/agency-meta-response
     paths:
       - "paper/**"
       - "references/**"
@@ -12,6 +11,7 @@ on:
       - "applications/**"
       - "provenance/**"
       - "scripts/**"
+      - "tests/**"
       - "README.md"
       - "CITATION.cff"
       - "LICENSE"
@@ -20,7 +20,26 @@ on:
       - "CONTRIBUTING.md"
       - ".github/workflows/build-paper.yml"
   pull_request:
+    paths:
+      - "paper/**"
+      - "references/**"
+      - "research/**"
+      - "applications/**"
+      - "provenance/**"
+      - "scripts/**"
+      - "tests/**"
+      - "README.md"
+      - "CITATION.cff"
+      - "LICENSE"
+      - "CHANGELOG.md"
+      - "REVIEW_GUIDE.md"
+      - "CONTRIBUTING.md"
+      - ".github/workflows/build-paper.yml"
   workflow_dispatch:
+
+concurrency:
+  group: build-paper-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: write
@@ -38,6 +57,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
+      - name: Run validator regression tests
+        run: python -m unittest discover -s tests -p "test_*.py"
 
       - name: Install PDF and validation dependencies
         run: |

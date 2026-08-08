@@ -55,9 +55,35 @@ OLD_RESEARCH = [
     "research/03_cultural_manifestations.md",
 ]
 
+CITATION_KEY_RE = re.compile(r"(?<![A-Za-z0-9])@([A-Za-z0-9_:\-.]+)")
+
 
 def parse_bib_keys(text: str) -> set[str]:
     return set(re.findall(r"@[A-Za-z]+\s*\{\s*([^,\s]+)", text))
+
+
+def strip_markdown_code(text: str) -> str:
+    """Remove fenced and inline code before scanning Markdown citations."""
+    kept: list[str] = []
+    fence_marker: str | None = None
+
+    for line in text.splitlines(keepends=True):
+        fence = re.match(r"^\s*(`{3,}|~{3,})", line)
+        if fence_marker is not None:
+            if fence and fence.group(1)[0] == fence_marker:
+                fence_marker = None
+            continue
+        if fence:
+            fence_marker = fence.group(1)[0]
+            continue
+        kept.append(re.sub(r"`[^`\n]*`", "", line))
+
+    return "".join(kept)
+
+
+def extract_citation_keys(text: str) -> set[str]:
+    """Return scholarly citation keys outside Markdown code examples."""
+    return set(CITATION_KEY_RE.findall(strip_markdown_code(text)))
 
 
 def markdown_files() -> list[Path]:
@@ -122,12 +148,12 @@ def check_citations(bib_keys: set[str]) -> list[str]:
     cited: set[str] = set()
     for path in markdown_files():
         text = path.read_text(encoding="utf-8")
-        cited.update(re.findall(r"(?<![A-Za-z0-9])@([A-Za-z0-9_:\-.]+)", text))
+        cited.update(extract_citation_keys(text))
     missing = sorted(cited - bib_keys)
     if missing:
         errors.append("missing bibliography keys: " + ", ".join(missing))
     main = (ROOT / "paper" / "The_Demure_Fulcrum_Academic_Paper.md").read_text(encoding="utf-8")
-    main_keys = set(re.findall(r"(?<![A-Za-z0-9])@([A-Za-z0-9_:\-.]+)", main))
+    main_keys = extract_citation_keys(main)
     if len(main_keys) < 25:
         errors.append(f"main paper has only {len(main_keys)} unique scholarly citations; expected at least 25")
     return errors
