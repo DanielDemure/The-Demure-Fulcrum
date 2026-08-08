@@ -4,6 +4,17 @@ All notable public changes to The Demure Fulcrum are documented here.
 
 ## Unreleased — August 2026 scholarly reconstruction
 
+### Simulation-protocol and visual-quality update
+
+- Added a standalone pre-registration protocol for testing a negotiation-inspired strategy in dynamic Iterated Prisoner's Dilemma networks.
+- Added a simulation-programme overview, implementation acceptance criteria, ablations, held-out robustness conditions, and explicit rejection rules.
+- Clarified that computational results test a formal strategy under model assumptions and cannot validate the psychological framework.
+- Corrected the review-response summary: the supplied critique proposed fMRI for spatial hypotheses and EEG for the 300–500 ms temporal hypothesis; the earlier response had conflated those proposals.
+- Replaced the compressed raster README banner with a scalable SVG banner to eliminate blur and rendering artefacts.
+- Expanded contribution and review guidance for simulation implementations, null results, reproducibility, exclusion, false sanction, and power concentration.
+- Added scholarly sources required by the protocol and neurobiological-methodology clarification.
+- Extended repository validation and CI path tracking to the simulation directory and vector banner.
+
 ### External-review integration
 
 - Added a public accepted / partially accepted / not accepted / requires-evidence response to the 8 August 2026 review.
@@ -12,7 +23,7 @@ All notable public changes to The Demure Fulcrum are documented here.
 - Recast limitations as eight named constraints, including categorical-versus-dimensional status and single-author origin.
 - Expanded the cultural companion into a source-qualified comparative research programme rather than a universality argument.
 - Defined Hexure's Rewiring Engine, Sanctioned Small World, and Cathedral Building as falsifiable application concepts and added a simulation preregistration outline.
-- Updated the README banner, matching PDF-cover symbol, workflow asset tracking, and repository validation requirements.
+- Updated the README visual identity, matching PDF-cover symbol, workflow asset tracking, and repository validation requirements.
 
 ### Changed
 
