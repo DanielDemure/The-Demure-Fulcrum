@@ -245,7 +245,9 @@ After behavioural validity, compare negotiation with effort-matched social probl
 
 #### Study J: dynamic-network strategy comparison
 
-Formalise a negotiation-inspired strategy independently of the Hexure name. Compare it with Always Defect, Tit-for-Tat, Generous Tit-for-Tat, Grim Trigger, Win-Stay-Lose-Shift, and partner-choice baselines across topology, noise, rewiring cost, and payoff regimes. Preregister seeds, primary outcomes, sensitivity analyses, and out-of-sample replications. A tuned win under one parameter set is not evidence of general superiority.
+Formalise a negotiation-inspired strategy independently of the Hexure name. Compare it with Always Defect, Always Cooperate, Tit-for-Tat, Generous Tit-for-Tat, Grim Trigger, Win-Stay-Lose-Shift, and partner-choice baselines across topology, noise, rewiring cost, information quality, and payoff regimes. Preregister seeds, primary outcomes, sensitivity analyses, adverse outcomes, and out-of-sample replications. A tuned win under one parameter set is not evidence of general superiority.
+
+The current pre-registration-ready specification is [`../simulations/hexure_ipd_protocol.md`](../simulations/hexure_ipd_protocol.md). It treats run-level summaries as the inferential unit, includes mechanism ablations and held-out environments, and requires rejection when gains depend on unrealistic information, cost-free rewiring, exclusion, false sanction, or concentration.
 
 ## 9. Analysis plan principles
 

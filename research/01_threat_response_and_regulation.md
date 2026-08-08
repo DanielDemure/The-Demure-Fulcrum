@@ -9,7 +9,7 @@ This companion summarises research that constrains any account of negotiation un
 
 ## 1. From fight-or-flight to dynamic defensive systems
 
-Walter Cannon's account of bodily mobilisation under threat remains historically important [@cannon1915]. Modern research, however, does not support a simple menu of three mutually exclusive responses. Defensive behaviour varies with threat distance, escape availability, prior learning, environmental affordances, and the perceived cost of action [@fanselow1994; @blanchard2001; @mobbs2007].
+Walter Cannon's account of bodily mobilisation under threat remains historically important [@cannon1915]. Modern research, however, does not support a simple menu of three mutually exclusive responses. Expanded stress-response lists and defence-cascade models are themselves heuristics rather than evidence for neatly separated modules [@bracha2004; @kozlowska2015]. Defensive behaviour varies with threat distance, escape availability, prior learning, environmental affordances, and the perceived cost of action [@fanselow1994; @blanchard2001; @mobbs2007].
 
 The defense-cascade literature describes linked phases that can include orientation, freezing, active escape or confrontation, tonic immobility, and collapsed immobility [@kozlowska2015]. Freezing is not always passive failure. It can reduce detection, stabilise perception, and prepare action [@roelofs2017]. The same outward stillness may therefore have different functions depending on timing and context.
 
@@ -77,9 +77,9 @@ Candidate indicators of negotiation include counterproposals, reciprocal concess
 
 ## 10. Polyvagal Theory: relevance and limits
 
-Polyvagal Theory offers an influential account linking autonomic state, safety, immobilisation, mobilisation, and social engagement [@porges2007; @porges2022]. It has also received serious criticism regarding its evolutionary narrative, anatomical premises, and interpretation of respiratory sinus arrhythmia [@grossmantaylor2007; @grossman2023].
+Polyvagal Theory offers an influential account linking autonomic state, safety, immobilisation, mobilisation, and social engagement [@porges2007; @porges2022]. It has also received serious criticism regarding its evolutionary narrative, anatomical premises, and interpretation of respiratory sinus arrhythmia [@grossmantaylor2007; @taylor2015; @grossman2017; @grossman2023]. The critiques differ in scope, but together they justify treating the framework as contested rather than settled.
 
-The Demure Fulcrum does not require resolution of that dispute. The general proposition that autonomic regulation affects communication is compatible with many traditions. Specific claims about a uniquely mammalian ventral-vagal hierarchy should not be treated as established foundations for negotiation.
+The Demure Fulcrum does not require resolution of that dispute. The general proposition that autonomic regulation affects communication is compatible with many traditions. Specific claims about a uniquely mammalian ventral-vagal hierarchy should not be treated as established foundations for negotiation. If those specific claims are revised or rejected, the functional distinction between choosing within a situation and attempting to transform its terms remains independently testable.
 
 ## 11. Direct implications for the framework
 

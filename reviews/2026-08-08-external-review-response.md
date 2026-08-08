@@ -9,6 +9,12 @@ The supplied review argues for a clearer typology, falsifiable predictions, stro
 
 Many of those concerns were already addressed by the August 2026 scholarly reconstruction. This response records what is accepted, what is modified, and what is not adopted so that the repository does not silently oscillate between incompatible versions of the theory.
 
+## Correction: the supplied review separated fMRI and EEG
+
+An earlier version of this response described the rejected proposal as “fMRI within 500 ms.” That summary was inaccurate. The supplied review used **fMRI for spatial activation and connectivity hypotheses** and **EEG for the separate 300–500 ms expertise and timing hypothesis**. The distinction between modalities is methodologically valid and is now recorded correctly.
+
+The repository still does not predeclare a unique dlPFC/vmPFC/amygdala pattern, cortisol profile, or EEG time window as characteristic of a new response system. Those questions remain secondary to reliable behavioural definition and control conditions matched for language, effort, threat, and social interaction.
+
 ## Decision summary
 
 | Review recommendation | Decision | Repository response |
@@ -18,10 +24,11 @@ Many of those concerns were already addressed by the August 2026 scholarly recon
 | Add falsifiable predictions | **Accepted and already implemented; expanded cautiously** | Six core behavioural predictions, rival explanations, and disconfirmation criteria remain primary. Neurobiological, developmental, cultural, and simulation studies are added only as secondary hypotheses after construct validation. |
 | Treat negotiation as a fourth fundamental stress response | **Not accepted as an established claim** | The paper proposes an agency-preserving higher-order meta-response, not a demonstrated fourth autonomic reflex or hard-wired instinct. |
 | Assign a distinct dlPFC/vmPFC/amygdala/cortisol signature | **Requires evidence; proposed remedy not accepted** | These systems are not unique to negotiation. The repository will not predeclare a biomarker before showing reliable behavioural construct validity. |
-| Measure fMRI differences within 500 ms | **Not accepted methodologically** | Conventional fMRI does not resolve a 300–500 ms process in the way implied. EEG/MEG may examine timing, but timing differences would show expertise-related processing, not automatically establish a new stress-response system. |
+| Separate spatial and temporal neurobiological hypotheses: fMRI for spatial mapping and EEG for 300–500 ms timing | **Methodological distinction accepted; exact predictions deferred** | The supplied review correctly separated the modalities; an earlier repository response conflated them. fMRI and EEG may later constrain mechanism, but no region, connectivity pattern, cortisol profile, or time window is treated as diagnostic before behavioural construct validation. |
 | Define a C-PTSD clinical dissociation profile | **Requires evidence; not adopted as a present prediction** | The proposed profile risks confounding negotiation with general executive, social-cognitive, trauma, and functional impairment. Clinical work belongs after behavioural validation and requires validated negotiation tasks. |
 | Add cross-cultural universality thresholds | **Partially accepted** | Comparative research is necessary, but fixed percentages such as 75% or 80% are not justified in advance. The repository adds candidate cases and measurement-invariance questions instead of claiming universality. |
-| Add agent-based network predictions for Hexure | **Accepted with modification** | A preregistration outline will compare named strategies, topology, rewiring rules, sensitivity, and resilience without assuming a 65% cooperation threshold or guaranteed superiority. |
+| Add agent-based network predictions for Hexure | **Accepted with modification** | A preregistration outline compares named strategies, topology, rewiring rules, sensitivity, resilience, exclusion, and concentration without assuming a 65% cooperation threshold or guaranteed superiority. |
+| Add a pre-registration-ready IPD network protocol | **Accepted with methodological strengthening** | A standalone protocol now defines `NEG-v0.1`, costly rewiring, noisy reputation, defector invasion, frequency dependence, ablations, held-out conditions, run-level inference, stopping rules, and explicit rejection criteria. It tests a formal strategy, not the psychological framework. |
 | Acknowledge Polyvagal Theory controversy | **Accepted and already implemented** | Polyvagal Theory is presented as contested and non-essential. The framework survives rejection of its specific anatomical or evolutionary claims. |
 | Distinguish negotiate from fawn | **Accepted and already implemented** | The operational distinction is behavioural and graded: contingency, counterproposal, information seeking, reciprocal concession, and residual alternatives—not invented hormonal profiles or moral judgement. |
 | Present Hexure trading results as illustrative only | **Accepted and already implemented** | The twenty-trade record is excluded from the evidentiary core and described as an anecdote incapable of causal validation. |
@@ -87,8 +94,9 @@ This review cycle adds:
 - an explicit four-form typology;
 - secondary extension hypotheses with prerequisites and disconfirmation conditions;
 - a cross-cultural research matrix;
-- a preregistration outline for Hexure simulations;
+- a preregistration outline and standalone formal protocol for Hexure-inspired simulations;
 - eight named limitations including single-author origin;
-- updated review questions, README navigation, visual assets, changelog, CI asset tracking, and repository validation.
+- a correction distinguishing the review's fMRI spatial proposal from its EEG temporal proposal;
+- a scalable SVG README banner, updated review questions, navigation, changelog, CI path tracking, and repository validation.
 
 The guiding principle is simple: criticism should make the framework more precise and more vulnerable to disconfirmation—not merely more impressive-sounding.

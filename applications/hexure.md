@@ -158,6 +158,8 @@ A predefined reinvestment mechanism will produce more durable shared infrastruct
 
 ### Simulation preregistration outline
 
+A full protocol is available at [`../simulations/hexure_ipd_protocol.md`](../simulations/hexure_ipd_protocol.md). It converts the outline below into a versioned design with a neutral null hypothesis, exact strategy rules, non-zero rewiring cost, noisy and manipulable reputation, paired run-level comparisons, mechanism ablations, held-out environments, and explicit rejection conditions. No simulation results have yet been reported.
+
 A network simulation should be specified before results are observed:
 
 - **topology:** lattice, random, scale-free, and Watts–Strogatz small-world variants;
