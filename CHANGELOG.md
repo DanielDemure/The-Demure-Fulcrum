@@ -4,6 +4,16 @@ All notable public changes to The Demure Fulcrum are documented here.
 
 ## Unreleased — August 2026 scholarly reconstruction
 
+### External-review integration
+
+- Added a public accepted / partially accepted / not accepted / requires-evidence response to the 8 August 2026 review.
+- Split the typology into interpersonal, institutional, intrapersonal, and existential forms while retaining core-versus-extension status.
+- Added secondary hypotheses on expert automaticity, development, cross-cultural portability, dynamic-network simulation, and psychophysiological constraints after behavioural validation.
+- Recast limitations as eight named constraints, including categorical-versus-dimensional status and single-author origin.
+- Expanded the cultural companion into a source-qualified comparative research programme rather than a universality argument.
+- Defined Hexure's Rewiring Engine, Sanctioned Small World, and Cathedral Building as falsifiable application concepts and added a simulation preregistration outline.
+- Updated the README banner, matching PDF-cover symbol, workflow asset tracking, and repository validation requirements.
+
 ### Changed
 
 - Reframed negotiation from a claimed primary instinct to an **agency-preserving higher-order meta-response under threat**.

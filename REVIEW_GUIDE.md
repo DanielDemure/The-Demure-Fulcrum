@@ -22,10 +22,18 @@ The Demure Fulcrum is a **working conceptual paper, not a peer-reviewed or empir
 6. **Cross-cultural validity**  
    Is the definition tied to explicit, individualist, Western bargaining conventions? How should implicit, relational, collective, or mediator-led practices be represented?
 
-7. **Evidence calibration**  
+7. **Four-form boundary**  
+   Does separating interpersonal, institutional, intrapersonal, and existential forms clarify the theory, or does institutional negotiation remain reducible to interpersonal bargaining and procedure? Are the extensions labelled strongly enough?
+
+8. **Evidence sequencing**  
+   Is behavioural construct validation appropriately prior to clinical, developmental, endocrine, EEG, or neuroimaging claims? Which secondary hypothesis is mature enough to test first?
+
+9. **Evidence calibration**  
    Which claims are supported by the cited literature, which are only plausible inferences, and which require direct study?
 
 ## How to review
+
+The repository's documented response to the latest supplied critique is available at [`reviews/2026-08-08-external-review-response.md`](reviews/2026-08-08-external-review-response.md). Reviewers are encouraged to challenge both the external recommendations and the author's integration decisions.
 
 Open a GitHub issue with one primary claim per issue. Please include:
 
