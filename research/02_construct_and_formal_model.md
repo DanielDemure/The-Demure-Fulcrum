@@ -65,6 +65,19 @@ A mediator does not necessarily negotiate for personal interests but can enable 
 
 A coercive offer can contain genuine contingency while offering almost no acceptable alternative. Code bargaining form and residual agency separately. This avoids calling an imposed ultimatum either full negotiation or no interaction at all.
 
+### 3.4 Four-form typology and coding consequence
+
+The framework distinguishes four forms because they require different units of analysis.
+
+| Form | Unit of analysis | Core coding consequence |
+|---|---|---|
+| Interpersonal | exchange among responsive external agents | code offers, counteroffers, information, concessions, commitments, and alternatives |
+| Institutional | exchange through authorised rules, representatives, appeals, or multi-actor procedures | code who has authority, how the procedure can change terms, and where commitments are stored or enforced |
+| Intrapersonal | interaction among goals, values, identities, or temporal selves | do not score as strict negotiation; study as a self-regulation extension |
+| Existential | narrative engagement with fate, death, God, meaning, or an imagined absolute | do not score as strict negotiation; study phenomenology and cultural meaning |
+
+Interpersonal and institutional episodes may be combined for some analyses only after testing whether their measurement structure is equivalent. Institutional cases may distribute authority and memory across several nodes, making “the counterpart” a process rather than one person. Intrapersonal and existential cases should never be used as positive examples in a confirmatory scale for the strict construct.
+
 ## 4. Formal representation
 
 Represent the initial interaction as:
@@ -209,6 +222,30 @@ This separates “I can solve it myself” from “I can alter terms through ano
 Collect baseline measures of problem-focused coping, perceived control, assertiveness, reappraisal, negotiation experience, trait anxiety, and cognitive reflection. Use preregistered multilevel models to predict behaviour across scenarios.
 
 Evidence for distinctiveness requires out-of-sample improvement in prediction from Demure Fulcrum indicators. A statistically significant coefficient without meaningful predictive gain is insufficient.
+
+### 8.6 Secondary exploratory studies
+
+These studies are downstream of Experiments A–E and should not be launched as searches for a unique biomarker before construct validity exists.
+
+#### Study F: expert cue detection and automaticity
+
+Compare experienced negotiators with matched controls on validated scenarios containing or withholding influenceability, contingency, and transformability. Measure behavioural latency and accuracy first; EEG may then examine timing. The critical test is selective detection of negotiability, not a generic expert speed advantage.
+
+#### Study G: developmental differentiation
+
+Use age-appropriate interactive conflicts to separate requests, persuasion, sharing, imitation, appeasement, and contingent exchange. Model language, executive function, perspective taking, and metacognition [@flavell1979]. Do not preregister a fixed age boundary as though the construct were one maturational switch.
+
+#### Study H: cross-cultural portability
+
+Translate the codebook through collaborative adaptation, not literal wording alone. Compare direct and indirect signalling, individual and collective representation, and mediator-led processes. Test coder reliability and measurement invariance; treat failure as evidence for localisation or construct revision.
+
+#### Study I: psychophysiological constraints
+
+After behavioural validity, compare negotiation with effort-matched social problem solving, persuasion, and non-social control conditions. Measure arousal, EEG, endocrine response, or imaging only to constrain mechanisms. No region or hormone is assumed diagnostic.
+
+#### Study J: dynamic-network strategy comparison
+
+Formalise a negotiation-inspired strategy independently of the Hexure name. Compare it with Always Defect, Tit-for-Tat, Generous Tit-for-Tat, Grim Trigger, Win-Stay-Lose-Shift, and partner-choice baselines across topology, noise, rewiring cost, and payoff regimes. Preregister seeds, primary outcomes, sensitivity analyses, and out-of-sample replications. A tuned win under one parameter set is not evidence of general superiority.
 
 ## 9. Analysis plan principles
 

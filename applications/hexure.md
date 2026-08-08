@@ -29,7 +29,25 @@ A Hexure network would attempt to:
 - record outcomes so reputation is based on evidence rather than charisma;
 - direct a portion of short-term gains toward durable shared capacity.
 
-## 3. Rewiring as an organisational capability
+## 3. Architecture vocabulary and falsifiable status
+
+Hexure uses three coined terms. They are design hypotheses, not established constructs in network science.
+
+### Rewiring Engine
+
+A **Rewiring Engine** is a governance capability that identifies, creates, modifies, or ends relationships and decision channels. It may add a mediator, alternative supplier, appeal route, escrow mechanism, verified bridge, or exit option. Its value must be compared with simpler interventions rather than inferred from the metaphor.
+
+### Sanctioned Small World
+
+A **Sanctioned Small World** is a proposed network subset in which eligibility, reputation, commitments, sanctions, privacy, and exit are governed explicitly. The term does not imply that cooperation is guaranteed or “structurally enforced.” Rules can be gamed, sanctions can concentrate power, and filtering can create exclusion or groupthink.
+
+### Cathedral Building
+
+**Cathedral Building** is a normative reinvestment rule: a declared portion of value is directed toward durable shared capacity, knowledge, resilience, or public goods. It is not derived from graph topology. Tests must specify governance, beneficiaries, opportunity cost, durability, and whether the mechanism reduces or entrenches dependence on the intermediary.
+
+These definitions make the application vulnerable to failure. If a named mechanism adds no benefit beyond ordinary partner choice, contracting, mediation, or governance, the brand should not be treated as explanatory.
+
+## 4. Rewiring as an organisational capability
 
 The original manuscript described Hexure as a “rewiring engine.” The useful part of that metaphor is the ability to change relationships rather than treating every conflict as a battle within a fixed network.
 
@@ -44,7 +62,7 @@ Possible rewiring actions include:
 
 These are hypotheses about institutional design. Each intervention requires explicit outcome measures and comparison with simpler alternatives.
 
-## 4. Strategic intermediation
+## 5. Strategic intermediation
 
 Earlier notes used a “Lord of War” metaphor to describe profiting from conflict by supplying both sides. That metaphor is rhetorically forceful but ethically unstable: it can celebrate exploitation and create incentives to prolong harm.
 
@@ -52,7 +70,7 @@ The revised concept is **strategic intermediation**. An intermediary identifies 
 
 Strategic intermediation is legitimate only when the intermediary's incentives are aligned with resolution or durable value creation. Revenue that increases when conflict worsens creates a predictable moral hazard.
 
-## 5. Cathedral Building
+## 6. Cathedral Building
 
 “Cathedral Building” names a long-horizon commitment: some value created through intermediation is reinvested into institutions, public goods, knowledge, resilience, or infrastructure that outlasts a single transaction.
 
@@ -65,7 +83,7 @@ The concept is normative rather than scientific. It cannot be derived directly f
 - Are benefits measurable over an appropriate horizon?
 - Does the project reduce dependence on the intermediary or entrench it?
 
-## 6. The Knight's Oath as an ethical commitment
+## 7. The Knight's Oath as an ethical commitment
 
 The original Hexure notes included a Knight's Oath centred on courage, truth, and help for people with less power. In this revision it is treated as an author's ethical commitment, not as a psychological mechanism.
 
@@ -79,7 +97,7 @@ A practical governance version would require:
 6. **Proportionality:** the intermediary should not capture more value or power than the coordination function justifies.
 7. **Long-term accountability:** evaluate downstream effects, not only completed transactions.
 
-## 7. Radical transparency and privacy
+## 8. Radical transparency and privacy
 
 Radical transparency was previously described as universally liberating. That is too broad. Transparency can reduce hidden conflicts and improve accountability, but complete disclosure can expose vulnerable people, trade secrets, security controls, health information, or negotiating positions.
 
@@ -91,13 +109,13 @@ Hexure should instead use **purpose-limited transparency**:
 - separate auditability from public exposure;
 - obtain meaningful consent where disclosure affects identifiable people.
 
-## 8. Decision routines
+## 9. Decision routines
 
 Personal routines such as standard clothing, dietary practices, or automated trading rules appeared in the original paper as though they formed part of one psychological architecture. They do not provide evidence for Hexure or the Demure Fulcrum.
 
 Decision routines may reduce cognitive load for an individual, but their effects depend on health, context, and implementation. They should be documented separately and evaluated on their own merits. No dietary practice is recommended by this repository.
 
-## 9. The twenty-trade anecdote
+## 10. The twenty-trade anecdote
 
 The original paper described a sequence of twenty trades—nineteen gains and one loss—as quantitative validation. That conclusion was not warranted.
 
@@ -114,7 +132,7 @@ If the case is retained for future study, the minimum requirements are:
 
 It is not used as evidence in the main paper.
 
-## 10. Testable application hypotheses
+## 11. Testable application hypotheses
 
 Hexure can be converted from doctrine into a researchable application through bounded hypotheses.
 
@@ -138,9 +156,24 @@ Intermediaries whose fees and dual relationships are disclosed will produce high
 
 A predefined reinvestment mechanism will produce more durable shared infrastructure than discretionary post-profit philanthropy, after controlling for total resources.
 
+### Simulation preregistration outline
+
+A network simulation should be specified before results are observed:
+
+- **topology:** lattice, random, scale-free, and Watts–Strogatz small-world variants;
+- **strategies:** Always Defect, Tit-for-Tat, Generous Tit-for-Tat, Grim Trigger, Win-Stay-Lose-Shift, random partner choice, and a clearly formalised negotiation-inspired strategy;
+- **rewiring:** who may sever or create links, at what cost, with what information, delay, and capacity limit;
+- **reputation:** observation error, strategic manipulation, decay, privacy, and false positives;
+- **shocks:** defector entry, information corruption, bridge failure, coalition capture, and resource inequality;
+- **outcomes:** mean and distributional payoff, cooperation, exclusion, resilience, concentration of power, false sanction, and recovery time;
+- **robustness:** preregistered parameter ranges, seeds, sensitivity analysis, ablations, and held-out conditions;
+- **reporting:** publish null results and the regions in which simpler strategies outperform the named model.
+
+No cooperation percentage or superiority margin is assumed in advance. A result would support only the formalised strategy under the tested conditions; it would not validate the psychological framework.
+
 Each hypothesis can fail. Results should be compared with simpler governance designs before attributing value to Hexure as a named system.
 
-## 11. Minimum viable pilot
+## 12. Minimum viable pilot
 
 A defensible pilot would be small and auditable:
 
@@ -155,7 +188,7 @@ A defensible pilot would be small and auditable:
 
 The pilot should not market itself as a validated network architecture. Its purpose is to learn whether a specific intervention solves a specific problem.
 
-## 12. Current status
+## 13. Current status
 
 Hexure remains a speculative application programme. Its concepts may be useful, but they have not yet been tested as a coherent system. The appropriate next step is not expansion of doctrine. It is a narrow pilot, transparent governance, predeclared measures, and willingness to abandon elements that do not work.
 

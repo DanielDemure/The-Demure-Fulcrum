@@ -103,20 +103,40 @@ A coercive offer can also create the appearance of choice while eliminating acce
 
 These axes can diverge.
 
-## 10. Cross-cultural expansion without tokenism
+## 10. Cross-cultural comparison as a research programme
 
-Adding references to Ubuntu, Japanese *wa*, Indigenous peacemaking, ho'oponopono, or other traditions without deep source work would create decorative diversity rather than comparative research. Cross-cultural extension requires collaboration with scholars and communities who understand local institutions, languages, histories, and power relations.
+Cross-cultural extension is necessary, but a named tradition should not be counted as proof merely because it contains reconciliation, reciprocity, consensus, or gift exchange. The relevant question is whether local practices contain an influenceable authority, contingent exchange, attempted transformation, and a culturally meaningful form of residual agency.
 
-Useful questions include:
+The following cases are **candidate research sites**, not evidence that negotiation is the modal response of a society.
 
-- Is disagreement stated directly or managed through intermediaries?
-- Are interests represented individually, by households, or by groups?
-- What counts as a credible commitment?
-- Is exit legitimate, shameful, or impossible?
-- How are elders, kin, spiritual authorities, or state actors involved?
-- Does preserving agency mean individual voice, relational continuity, collective autonomy, or something else?
+| Candidate case | Scholarly starting point | Potential relevance | Required caution |
+|---|---|---|---|
+| Hawaiian *ho'oponopono* | Shook's study of contemporary Hawaiian problem-solving practice [@shook1986] | facilitated family process, admission, restitution, relationship repair, and restoration of balance | document historical and contemporary variation; do not infer a universal Hawaiian response or treat reconciliation as automatically agent-preserving |
+| Ubuntu, reconciliation, and council processes | Tutu's account of truth and reconciliation provides one macro-level entry point [@tutu1999] | collective recognition, testimony, accountability, relationship continuity, and negotiated political transition | Ubuntu is not one procedure; local legal and ethnographic work is needed on *lekgotla* and other council forms |
+| Japanese *wa* and *nemawashi* | Lebra's analysis of Japanese behavioural patterns [@lebra1976] | indirect signalling, consensus preparation, face, role, and relationship-preserving decision processes | avoid national-character generalisation; compare sectors, generations, hierarchy, and cases where consensus masks coercion |
+| Mendi gift politics in Highland Papua New Guinea | Lederman's ethnography of gifts, social relations, and politics [@lederman1986] | reputation, exchange, brokerage, obligation, coalition, and distributed political influence | gift exchange is not reducible to positive-sum bargaining; code gender, status, coercion, and historical change |
+| Ju/'hoansi and other forager conflict contexts | Lee's ethnography, together with work on egalitarian institutions and exchange [@lee1979; @woodburn1982; @wiessner2002] | mediation, mobility, levelling, sharing, humour, reputation, and exit as possible components of conflict management | do not claim that negotiation is modal without systematic event coding; violence, departure, gender, and external pressure must remain visible |
 
-The structural definition may travel even where explicit offers do not. For example, indirect signalling or third-party mediation may alter terms while preserving face. Measurement must therefore distinguish *explicitness* from *contingency*.
+### 10.1 Minimum comparative evidence
+
+For each case, researchers should document:
+
+1. who can authoritatively alter the outcome;
+2. how interests are represented—individual, household, lineage, community, or office;
+3. how contingency is expressed, including silence, intermediaries, ritual, gifts, sequencing, or indirect language;
+4. what makes a commitment credible and how breach is handled;
+5. whether refusal, appeal, delay, exit, mobility, or collective voice remains available;
+6. how often the practice occurs relative to command, violence, withdrawal, avoidance, or imposed settlement;
+7. whose agency and safety are preserved or sacrificed;
+8. whether the account describes an ideal, a historical institution, a contemporary practice, or observed episodes.
+
+### 10.2 Comparative design
+
+A defensible programme would combine local-language archival work, ethnography, event coding, interviews, and collaboration with scholars or communities who can challenge imported categories. It should sample counterexamples as deliberately as apparent matches. Measurement invariance should be tested across sites; failure would require localisation or revision rather than treating local practice as deficient.
+
+### 10.3 What convergence could mean
+
+Cross-cultural recurrence could support a modest claim: interdependent groups repeatedly develop social technologies for altering terms without immediate force or exit. It would not establish a dedicated neural circuit, a universal fourth response, or a predetermined percentage of societies in which negotiation is “default.”
 
 ## 11. What cultural recurrence can support
 

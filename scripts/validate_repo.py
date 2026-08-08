@@ -13,6 +13,9 @@ ROOT = Path(__file__).resolve().parents[1]
 
 REQUIRED = [
     "README.md",
+    "assets/demure_fulcrum_banner.jpg",
+    "assets/demure_fulcrum_symbol.png",
+    "reviews/2026-08-08-external-review-response.md",
     "CITATION.cff",
     "LICENSE",
     "CHANGELOG.md",
@@ -196,9 +199,11 @@ def check_main_structure() -> list[str]:
         "Levels of Analysis",
         "Operational Definition",
         "Boundary Conditions",
+        "Four Forms of Negotiation",
         "Differentiation from Adjacent Constructs",
         "Formal Model",
         "Testable Predictions",
+        "Secondary Mechanism and Extension Hypotheses",
         "Disconfirmation Criteria",
         "Empirical Research Programme",
         "Limitations",

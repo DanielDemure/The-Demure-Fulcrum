@@ -102,17 +102,24 @@ The strict construct becomes less applicable when the threat is immediate and no
 
 Negotiability is therefore not a personality trait alone. It is a property of the actor-situation relation. The same person may negotiate in one crisis and flee in another because the available structure differs.
 
-## 4.3 Strict, intrapersonal, and existential forms
+## 4.3 Four Forms of Negotiation
 
-| Form | Counterpart | Structural target | Evidentiary status |
+The external review usefully separates four meanings that had previously been compressed into three rows. They are retained here with different evidentiary status rather than treated as one biological system.
+
+| Form | Counterpart or decision structure | Main structural target | Evidentiary status |
 |---|---|---|---|
-| **Interpersonal or institutional negotiation** | another person, group, organisation, or process | terms, timing, commitments, information, options, or payoffs | core construct and primary empirical target |
-| **Intrapersonal negotiation** | competing goals, identities, values, or temporal selves | self-imposed rules, priorities, interpretations, or commitments | conceptual extension overlapping self-regulation and reappraisal |
-| **Existential negotiation** | fate, God, death, identity, meaning, or an imagined absolute | narrative relationship to uncontrollable conditions | phenomenological and cultural extension, not direct behavioural evidence |
+| **Interpersonal negotiation** | one or more responsive people or groups | offers, concessions, information, commitments, timing, or relationship terms | core empirical form |
+| **Institutional negotiation** | an authorised procedure, representative, organisation, regulator, court, appeal channel, or multi-actor governance process | rules, permissions, enforcement, representation, decision rights, or available channels | core empirical form |
+| **Intrapersonal negotiation** | competing goals, identities, values, or temporal selves | priorities, self-imposed rules, interpretations, or commitments | conceptual extension overlapping self-regulation and reappraisal |
+| **Existential negotiation** | fate, God, death, identity, meaning, or an imagined absolute | the narrative relationship to conditions that may be literally uncontrollable | phenomenological and cultural extension, not direct behavioural evidence |
 
-Intrapersonal negotiation may describe useful self-dialogue: “If I complete this task, I will permit myself rest,” or “I can retain this value while revising that belief.” Yet such cases lack a separate external decision maker. They should not be assumed to share all mechanisms with bargaining.
+Interpersonal and institutional forms satisfy the strict construct only when an influenceable external actor or process can respond contingently. Institutional negotiation is separated because authority, cognition, memory, and commitment can be distributed across procedures and representatives rather than residing in one counterpart. A grievance appeal, mediated settlement, labour negotiation, or regulatory waiver can therefore qualify even when no single person controls the whole outcome.
+
+Intrapersonal negotiation may describe useful self-dialogue: “If I complete this task, I will permit myself rest,” or “I can retain this value while revising that belief.” Yet such cases lack an independent external decision maker. They should not be assumed to share all mechanisms with bargaining.
 
 Existential negotiation names a lived experience in which a person bargains with what cannot literally respond. Prayer, vows, defiance of fate, and bargaining in grief may preserve a sense of subjecthood, but they are better studied through phenomenology, narrative psychology, religion, or meaning-making than through a standard negotiation experiment.
+
+The forms do not share a presumed unique neural substrate. Nor is positive-sum agreement a definitional requirement: distributive, hostile, or coercive bargaining can still contain contingency and structural transformation. Ethical legitimacy, outcome quality, and degree of residual agency must be coded separately.
 
 # 5. Differentiation from Adjacent Constructs
 
@@ -314,6 +321,50 @@ Across cultures, the surface language, preferred relationship norms, directness,
 
 **Rival explanation:** the construct may encode a Western, individualist ideal of explicit bargaining. Failure of measurement invariance would require revision or localisation rather than universal claims.
 
+## 10.7 Secondary Mechanism and Extension Hypotheses
+
+The six predictions above concern the behavioural core and should be tested first. The following hypotheses respond to proposals in the external review but remain secondary. They become interpretable only after researchers can code strict negotiation reliably and distinguish it from active coping, persuasion, appeasement, and ordinary skill.
+
+### 10.7.1 Expertise and partial automaticity
+
+Experienced crisis negotiators, mediators, or diplomats may identify negotiability cues and generate appropriate first moves faster than matched non-experts. Behavioural latency and EEG may test whether expertise changes early attention, frontal control, or later evaluative processing. A difference would support learned automaticity, not a newly discovered autonomic reflex.
+
+**Prerequisite:** experts and controls must perform a task that has already demonstrated negotiation-specific behavioural validity.
+
+**Disconfirmation condition:** if expertise affects only general speed, vocabulary, or confidence and does not improve detection of influenceability, contingency, or structural options, the automaticity extension is weakened.
+
+### 10.7.2 Developmental emergence
+
+Negotiation behaviours may become more complex as children develop perspective taking, metacognition, language, executive control, and understanding of commitments [@premack1978; @flavell1979; @tomasello2005]. The repository does not assume a fixed age window or a six-month relation to one Theory-of-Mind milestone.
+
+**Prerequisite:** tasks must separate requests, turn taking, persuasion, and imitation from genuinely contingent attempts to alter terms.
+
+**Disconfirmation condition:** if age-related changes are fully explained by language, general inhibition, or learned scripts, no negotiation-specific developmental sequence is established.
+
+### 10.7.3 Cross-cultural portability
+
+The structural definition should permit coding across contexts that use direct offers, indirect signalling, mediators, households, elders, councils, or collective representation. Surface form and the meaning of agency may vary substantially [@brett2000].
+
+**Prerequisite:** local scholars and participants must help define authority, commitment, refusal, collective interest, and acceptable evidence.
+
+**Disconfirmation condition:** failure of inter-rater reliability or measurement invariance after localisation requires revision or abandonment of universal framing; no preset percentage of societies is treated as proof.
+
+### 10.7.4 Dynamic-network simulation
+
+Agent-based models can test whether contingent cooperation, reputation, partner choice, and rewiring improve outcomes under specified network conditions [@wattsstrogatz1998; @nowak2006; @rand2011]. Such results would evaluate a formal strategy, not validate the psychological construct or the Hexure brand.
+
+**Prerequisite:** strategies, topology, mutation, noise, payoff structure, rewiring costs, seeds, and benchmark models must be preregistered.
+
+**Disconfirmation condition:** if performance depends on tuned assumptions, disappears under sensitivity analysis, or fails to improve on simpler strategies out of sample, the claimed application advantage is rejected.
+
+### 10.7.5 Psychophysiological constraint
+
+After behavioural validation, autonomic, endocrine, EEG, or neuroimaging studies may test how arousal, time pressure, preparation, and task support constrain negotiation [@arnsten2009; @hermans2014; @shields2016]. No dlPFC, vmPFC, amygdala, vagal, or cortisol pattern is declared unique in advance.
+
+**Prerequisite:** control conditions must match cognitive effort, social interaction, language, and outcome stakes without permitting structural negotiation.
+
+**Disconfirmation condition:** if observed physiology tracks generic effort, threat, or social engagement rather than validated negotiation behaviour, it does not support a distinct mechanism.
+
 # 11. Disconfirmation Criteria
 
 A framework becomes scientific only when evidence can count against it. The distinctiveness claim would be weakened substantially if one or more of the following results were replicated:
@@ -406,21 +457,37 @@ In practice, the framework may support decision aids that ask: Is there an influ
 
 # 15. Limitations
 
-First, the framework is theoretical. The cited literatures establish threat dynamics, appraisal, regulation, social cognition, bargaining, and cooperation; they do not directly validate the Demure Fulcrum as one construct.
+## 15.1 Theoretical, not empirical, status
 
-Second, conceptual breadth remains a risk. If strict, intrapersonal, and existential uses are allowed to drift together, *negotiation* can become a metaphor for almost any adaptive thought. The typology must therefore be enforced in empirical writing.
+The framework is theoretical. The cited literatures establish threat dynamics, appraisal, regulation, social cognition, bargaining, and cooperation; they do not directly validate the Demure Fulcrum as one construct. The predictions are a research agenda, not findings.
 
-Third, the framework may overlap extensively with problem-focused coping, perceived control, social problem solving, assertiveness, and negotiation skill. Incremental validity is an empirical requirement, not an assumption.
+## 15.2 Categorical versus dimensional status
 
-Fourth, the language of agency can become moralising. People facing violence, coercive control, disability, poverty, discrimination, or institutional exclusion may have very limited alternatives. The framework must not convert structural deprivation into an individual failure to find leverage.
+Negotiation may not be a categorical response comparable to a discrete reflex. It may prove to be a higher-order policy, a dimensional combination of active coping and social cognition, or a context-dependent overlay that modulates several action tendencies. The repository favours the meta-response interpretation, but empirical work must adjudicate rather than assume distinctiveness.
 
-Fifth, the formal model simplifies lived situations. Utilities are not always stable, actors may misunderstand themselves, commitments may be unenforceable, and emotion can transform what is valued. Formal clarity is useful only if it remains corrigible by behavioural and qualitative evidence.
+## 15.3 Cultural and WEIRD-sample bias
 
-Sixth, the cultural examples are selective and largely drawn from Western literature and cinema. Cross-cultural research must examine local practices and concepts rather than merely adding decorative non-Western examples.
+Much relevant research comes from Western, educated, industrialised, rich, and democratic settings. Explicit individual bargaining, personal veto, and direct interest statements may not capture collective, relational, implicit, or mediator-led practices. Cross-cultural work must test local meanings and measurement invariance rather than adding decorative examples.
 
-Seventh, negotiation can worsen outcomes. It may consume time during emergencies, disclose vulnerability, expose a person to retaliation, or produce a bad agreement when exit would be better. The theory predicts a response option, not a universal prescription.
+## 15.4 Overlap and incremental validity
 
-Finally, the name is eponymous and may be mistaken for a claim of modest or passive behaviour. Future research should test the construct independently of the branded label.
+The framework may overlap extensively with problem-focused coping, perceived control, social problem solving, assertiveness, cognitive reappraisal, and negotiation skill. Incremental validity is an empirical requirement. A branded label that adds no reliable explanatory or predictive value should be narrowed or rejected.
+
+## 15.5 Power, residual agency, and safety
+
+The language of agency can become moralising. People facing violence, coercive control, disability, poverty, discrimination, or institutional exclusion may have very limited alternatives. Appeasement, exit, silence, or immediate protective action can be safer than negotiation. The framework must not convert structural deprivation into an individual failure to find leverage.
+
+## 15.6 Neurobiological specificity
+
+Prefrontal, cingulate, amygdala, default-mode, autonomic, and endocrine processes proposed as possible correlates participate in many forms of cognition and social behaviour. No unique neural or hormonal signature has been established. Biological studies require validated behavioural tasks and control conditions matched for effort, language, social interaction, and threat.
+
+## 15.7 Evolutionary and formal-model inference
+
+The evolutionary rationale is plausible but indirect. Comparative, archaeological, and ethnographic evidence cannot cleanly identify the emergence of a negotiation meta-response. Likewise, `G → G′` is a simplifying formal representation: values may be unstable, actors may misunderstand themselves, commitments may fail, and emotion may change what counts as a payoff.
+
+## 15.8 Single-author origin and branded label
+
+The framework originates with one author and has not undergone formal peer review. Open publication, explicit falsification criteria, and invited criticism improve transparency but do not substitute for independent replication. The name *Demure* is eponymous and may shape interpretation; future research should test the construct without relying on the brand.
 
 # 16. Conclusion
 

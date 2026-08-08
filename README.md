@@ -1,6 +1,6 @@
 # The Demure Fulcrum
 
-![The Demure Fulcrum symbol](assets/demure_fulcrum_symbol.png)
+![The Demure Fulcrum — negotiation as an agency-preserving meta-response under threat](assets/demure_fulcrum_banner.jpg)
 
 > **Working conceptual paper — not peer reviewed**  
 > The framework has not been empirically validated as a distinct psychological, clinical, autonomic, or neurobiological response system.
@@ -27,6 +27,15 @@ Strict negotiation under threat requires:
 7. some retained capacity for refusal, counterproposal, delay, appeal, exit, or alternative action.
 
 Interpersonal and institutional negotiation form the **core empirical construct**. Intrapersonal negotiation and bargaining with fate, God, identity, or meaning are retained as **conceptual and phenomenological extensions**, not assumed to be the same process.
+
+## Four-form typology
+
+- **Interpersonal negotiation** — responsive external people or groups; core empirical form.
+- **Institutional negotiation** — authorised procedures, representatives, appeals, rules, or multi-actor governance; core empirical form.
+- **Intrapersonal negotiation** — deliberation among goals, values, identities, or temporal selves; conceptual extension.
+- **Existential negotiation** — bargaining with fate, God, death, meaning, or an imagined absolute; phenomenological extension.
+
+The forms are not treated as one biological system. The strict research construct applies to interpersonal and institutional episodes that contain an influenceable counterpart or process, contingency, attempted structural transformation, and residual agency.
 
 ## Read the work
 
@@ -56,7 +65,8 @@ Hexure is deliberately separated from the evidentiary core. Network design, stra
 - Physiological state, defensive behaviour, meta-response, and institutional application are separated.
 - Negotiation is distinguished from appeasement, tend-and-befriend, reappraisal, problem-focused coping, assertiveness, persuasion, and bargaining skill.
 - A formal `G → G′` model describes attempts to transform the game rather than merely choose within it.
-- Six testable predictions, rival hypotheses, disconfirmation criteria, and a staged research programme are included.
+- Six core behavioural predictions, rival hypotheses, disconfirmation criteria, and a staged research programme are included.
+- A second review cycle adds four explicit forms and secondary developmental, cross-cultural, network, expertise, and psychophysiological hypotheses without predeclaring biomarkers or universal thresholds.
 - Polyvagal Theory is treated as contested and non-essential.
 - Cultural material is labelled illustrative rather than evidentiary.
 - The original weak and placeholder reference list is replaced by a curated scholarly bibliography.
@@ -82,6 +92,7 @@ The framework earns scientific value only if future research can show:
 Critical review is explicitly invited.
 
 - [Focused review questions](REVIEW_GUIDE.md)
+- [Response to the 8 August 2026 external review](reviews/2026-08-08-external-review-response.md)
 - [Contribution instructions](CONTRIBUTING.md)
 - [Shared BibTeX bibliography](references/references.bib)
 
