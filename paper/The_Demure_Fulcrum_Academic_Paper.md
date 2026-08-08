@@ -335,7 +335,7 @@ Experienced crisis negotiators, mediators, or diplomats may identify negotiabili
 
 ### 10.7.2 Developmental emergence
 
-Negotiation behaviours may become more complex as children develop perspective taking, metacognition, language, executive control, and understanding of commitments [@premack1978; @flavell1979; @tomasello2005]. The repository does not assume a fixed age window or a six-month relation to one Theory-of-Mind milestone.
+Negotiation behaviours may become more complex as children develop perspective taking, metacognition, language, executive control, and understanding of commitments [@premack1978; @flavell1979; @wimmerperner1983; @wellman2001; @tomasello2005]. The repository does not assume a fixed age window or a six-month relation to one Theory-of-Mind milestone. Developmental tasks must distinguish contingent attempts to change terms from requests, imitation, turn taking, and general verbal maturity.
 
 **Prerequisite:** tasks must separate requests, turn taking, persuasion, and imitation from genuinely contingent attempts to alter terms.
 
@@ -353,9 +353,11 @@ The structural definition should permit coding across contexts that use direct o
 
 Agent-based models can test whether contingent cooperation, reputation, partner choice, and rewiring improve outcomes under specified network conditions [@wattsstrogatz1998; @nowak2006; @rand2011]. Such results would evaluate a formal strategy, not validate the psychological construct or the Hexure brand.
 
-**Prerequisite:** strategies, topology, mutation, noise, payoff structure, rewiring costs, seeds, and benchmark models must be preregistered.
+A complete protocol is maintained separately at [`../simulations/hexure_ipd_protocol.md`](../simulations/hexure_ipd_protocol.md). It specifies the Iterated Prisoner's Dilemma payoff matrix, seven strategies, costly dynamic rewiring, noisy reputation, defector invasion, frequency dependence, mechanism ablations, held-out robustness environments, run-level inference, and adverse outcomes such as exclusion, false sanction, and concentration [@rapoport1965; @osbornerubinstein1994; @cohen1988; @wasserstein2016]. No simulation results have yet been reported.
 
-**Disconfirmation condition:** if performance depends on tuned assumptions, disappears under sensitivity analysis, or fails to improve on simpler strategies out of sample, the claimed application advantage is rejected.
+**Prerequisite:** strategies, topology, mutation, noise, payoff structure, rewiring costs, seeds, benchmark models, primary outcomes, and rejection rules must be preregistered before confirmatory runs.
+
+**Disconfirmation condition:** if performance depends on tuned assumptions, disappears under sensitivity analysis, fails to improve on simpler strategies out of sample, or produces unacceptable exclusion or power concentration, the claimed application advantage is rejected.
 
 ### 10.7.5 Psychophysiological constraint
 

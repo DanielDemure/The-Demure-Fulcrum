@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="600" viewBox="0 0 1800 600" role="img" aria-labelledby="title desc">
+  <title id="title">The Demure Fulcrum</title>
+  <desc id="desc">Negotiation as an agency-preserving meta-response under threat: constrained options on the left pass through a central fulcrum and become branching possibilities on the right.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071522"/>
+      <stop offset="0.54" stop-color="#0a2032"/>
+      <stop offset="1" stop-color="#0b2a38"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6f5834"/>
+      <stop offset="0.46" stop-color="#f0bd62"/>
+      <stop offset="0.54" stop-color="#ffe0a0"/>
+      <stop offset="1" stop-color="#9b7640"/>
+    </linearGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#263646"/>
+      <stop offset="1" stop-color="#101c28"/>
+    </linearGradient>
+    <radialGradient id="pivotGlow">
+      <stop offset="0" stop-color="#ffdc8d" stop-opacity="0.72"/>
+      <stop offset="0.42" stop-color="#d99a3f" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#d99a3f" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#7cd6d0" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+    <marker id="arrowTeal" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,3 L0,6 Z" fill="#42c6c4"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,3 L0,6 Z" fill="#62b7e5"/>
+    </marker>
+    <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,3 L0,6 Z" fill="#d5a24b"/>
+    </marker>
+  </defs>
+
+  <rect width="1800" height="600" fill="url(#bg)"/>
+  <rect x="925" width="875" height="600" fill="url(#grid)"/>
+
+  <g fill="none" stroke="#58c7c6" stroke-opacity="0.11" stroke-width="1">
+    <path d="M1160 60L1300 110L1425 68L1560 132L1715 70"/>
+    <path d="M1115 165L1270 210L1395 160L1535 225L1730 170"/>
+    <path d="M1210 315L1345 365L1460 310L1605 375L1760 330"/>
+    <path d="M1270 465L1400 420L1525 480L1665 430L1780 500"/>
+  </g>
+  <g fill="#62c9c6" fill-opacity="0.15">
+    <circle cx="1300" cy="110" r="5"/><circle cx="1425" cy="68" r="4"/><circle cx="1560" cy="132" r="6"/>
+    <circle cx="1270" cy="210" r="4"/><circle cx="1395" cy="160" r="5"/><circle cx="1535" cy="225" r="4"/>
+    <circle cx="1345" cy="365" r="5"/><circle cx="1460" cy="310" r="4"/><circle cx="1605" cy="375" r="6"/>
+  </g>
+
+  <g stroke="#7890a2" stroke-opacity="0.36" fill="#152434">
+    <path d="M0 0H76L140 68L140 225L82 206L0 116Z"/>
+    <path d="M0 116L82 206L230 255L172 350L0 312Z"/>
+    <path d="M0 312L172 350L285 424L184 520L0 485Z"/>
+    <path d="M140 68L254 186L230 255L82 206Z" fill="#1b2a3b"/>
+    <path d="M230 255L365 306L285 424L172 350Z" fill="#172636"/>
+    <path d="M184 520L365 430L470 520L0 600L0 485Z" fill="#122131"/>
+  </g>
+  <g stroke="#8fa3b2" stroke-opacity="0.27" fill="none" stroke-width="2">
+    <path d="M76 0L76 190"/><path d="M140 68L140 225"/><path d="M82 206L230 255"/><path d="M172 350L365 306"/>
+  </g>
+
+  <g stroke="#90a1ae" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.67">
+    <path d="M72 104L102 158H42Z"/><path d="M72 121V139"/><circle cx="72" cy="148" r="2" fill="#90a1ae"/>
+    <rect x="44" y="232" width="56" height="48" rx="5"/><path d="M55 232V217C55 193 89 193 89 217V232"/><circle cx="72" cy="254" r="5" fill="#90a1ae"/><path d="M72 259V270"/>
+    <circle cx="72" cy="388" r="31"/><path d="M55 388H89"/>
+  </g>
+
+  <g fill="none" stroke="#8ba1b3" stroke-opacity="0.34" stroke-width="2" stroke-dasharray="6 7">
+    <path d="M180 260C350 286 490 342 670 384"/>
+    <path d="M210 350C380 360 510 382 670 392"/>
+    <path d="M210 456C380 425 520 404 670 398"/>
+  </g>
+  <g fill="#8ba1b3" opacity="0.56">
+    <path d="M659 378L676 386L660 392Z"/><path d="M659 386L676 393L659 399Z"/><path d="M658 392L676 397L660 405Z"/>
+  </g>
+
+  <text x="900" y="132" text-anchor="middle" fill="#f4eadb" font-family="Georgia, 'Times New Roman', serif" font-size="92" font-weight="500" letter-spacing="0.5">The Demure Fulcrum</text>
+  <line x1="430" y1="171" x2="1370" y2="171" stroke="#b88b4b" stroke-opacity="0.55"/>
+  <rect x="894" y="164" width="12" height="12" transform="rotate(45 900 170)" fill="#d7a352"/>
+  <text x="900" y="220" text-anchor="middle" fill="#d7a85f" font-family="Arial, Helvetica, sans-serif" font-size="27" letter-spacing="0.3">Negotiation as an Agency-Preserving Meta-Response Under Threat</text>
+
+  <circle cx="900" cy="397" r="124" fill="url(#pivotGlow)"/>
+  <g fill="none" stroke="#d1a45d" stroke-opacity="0.19">
+    <circle cx="900" cy="397" r="55"/><circle cx="900" cy="397" r="86"/><circle cx="900" cy="397" r="118"/>
+  </g>
+
+  <path d="M605 389L1188 389L1202 397L1188 405L605 405L592 397Z" fill="url(#beam)" stroke="#f2c26f" stroke-opacity="0.75"/>
+  <path d="M250 397H592" stroke="#8f7042" stroke-width="5" stroke-linecap="round"/>
+  <path d="M1202 397H1320" stroke="#b78a49" stroke-width="5" stroke-linecap="round"/>
+
+  <path d="M900 401L803 548H997Z" fill="url(#stone)" stroke="#b8894a" stroke-width="2"/>
+  <circle cx="900" cy="397" r="24" fill="#d49a48" stroke="#f7d38b" stroke-width="3"/>
+  <circle cx="900" cy="397" r="10" fill="#ffe0a2"/>
+
+  <g stroke="#d8aa5e" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M900 455V518"/><path d="M871 470H929"/><path d="M879 470L866 495"/><path d="M921 470L934 495"/>
+    <path d="M852 495H880C878 507 872 513 866 513C860 513 854 507 852 495Z"/>
+    <path d="M920 495H948C946 507 940 513 934 513C928 513 922 507 920 495Z"/>
+    <path d="M881 520H919"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round" stroke-width="3">
+    <path d="M1320 397C1430 350 1510 255 1710 185" stroke="#42c6c4" marker-end="url(#arrowTeal)"/>
+    <path d="M1320 397C1435 375 1545 318 1760 315" stroke="#62b7e5" marker-end="url(#arrowBlue)"/>
+    <path d="M1320 397C1440 405 1550 430 1720 465" stroke="#d5a24b" marker-end="url(#arrowGold)"/>
+    <path d="M1320 397C1410 430 1490 515 1660 550" stroke="#50c5bd" marker-end="url(#arrowTeal)"/>
+    <path d="M1320 397C1430 390 1500 365 1640 385" stroke="#36aab0" marker-end="url(#arrowTeal)"/>
+  </g>
+
+  <g>
+    <circle cx="1500" cy="300" r="27" fill="#163c5a" stroke="#62b7e5" stroke-opacity="0.65"/>
+    <circle cx="1630" cy="212" r="32" fill="#17766f" stroke="#6ce2d6" stroke-opacity="0.7"/>
+    <circle cx="1575" cy="434" r="25" fill="#153c5a" stroke="#62b7e5" stroke-opacity="0.65"/>
+    <circle cx="1680" cy="480" r="22" fill="#8a6129" stroke="#e3b35d" stroke-opacity="0.75"/>
+    <circle cx="1638" cy="365" r="20" fill="#2c675f" stroke="#71c7b9" stroke-opacity="0.6"/>
+  </g>
+  <g fill="none" stroke="#e4f6f3" stroke-width="3" stroke-linejoin="round">
+    <path d="M1487 292Q1500 281 1514 292Q1517 304 1504 310L1495 316L1497 309Q1485 307 1487 292Z"/>
+    <path d="M1614 203Q1630 190 1646 203Q1649 217 1635 224L1625 231L1627 222Q1612 219 1614 203Z"/>
+    <path d="M1564 427Q1575 418 1587 427Q1589 438 1578 443L1570 449L1572 442Q1562 440 1564 427Z"/>
+    <path d="M1671 474Q1680 467 1689 474Q1691 483 1682 487L1676 492L1677 486Q1669 484 1671 474Z"/>
+    <path d="M1630 359Q1638 352 1647 359Q1649 367 1641 371L1635 376L1636 370Q1628 368 1630 359Z"/>
+  </g>
+
+  <line x1="180" y1="548" x2="1650" y2="548" stroke="#b88b4b" stroke-opacity="0.42"/>
+  <line x1="900" y1="548" x2="1650" y2="548" stroke="#56c8c3" stroke-opacity="0.35"/>
+</svg>
