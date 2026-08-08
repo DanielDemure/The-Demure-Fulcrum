@@ -1,10 +1,24 @@
-# Standard documentation repo ignores
-*.pyc
+# Python
 __pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Generated simulation outputs
+simulations/results/
+simulations/output/
+simulations/.cache/
+
+# Editors and operating systems
 .DS_Store
 Thumbs.db
 *.swp
 *.swo
 *~
-.idea/
 .vscode/
+.idea/
