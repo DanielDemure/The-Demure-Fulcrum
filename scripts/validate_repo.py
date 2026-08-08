@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate repository structure, scholarly citations, links, and generated PDF."""
+"""Validate repository structure, scholarly citations, links, assets, simulations, and generated PDF."""
 
 from __future__ import annotations
 
@@ -8,12 +8,14 @@ import re
 import sys
 from pathlib import Path
 from urllib.parse import unquote
+from xml.etree import ElementTree
 
 ROOT = Path(__file__).resolve().parents[1]
 
 REQUIRED = [
+    ".gitignore",
     "README.md",
-    "assets/demure_fulcrum_banner.jpg",
+    "assets/demure_fulcrum_banner.svg",
     "assets/demure_fulcrum_symbol.png",
     "reviews/2026-08-08-external-review-response.md",
     "CITATION.cff",
@@ -27,6 +29,8 @@ REQUIRED = [
     "research/02_construct_and_formal_model.md",
     "research/03_cultural_and_philosophical_illustrations.md",
     "applications/hexure.md",
+    "simulations/README.md",
+    "simulations/hexure_ipd_protocol.md",
     "provenance/README.md",
     "scripts/build_pdf.py",
 ]
@@ -58,6 +62,10 @@ OLD_RESEARCH = [
     "research/03_cultural_manifestations.md",
 ]
 
+OBSOLETE_ASSETS = [
+    "assets/demure_fulcrum_banner.jpg",
+]
+
 CITATION_KEY_RE = re.compile(r"(?<![A-Za-z0-9])@([A-Za-z0-9_:\-.]+)")
 
 
@@ -87,6 +95,31 @@ def strip_markdown_code(text: str) -> str:
 def extract_citation_keys(text: str) -> set[str]:
     """Return scholarly citation keys outside Markdown code examples."""
     return set(CITATION_KEY_RE.findall(strip_markdown_code(text)))
+
+
+def parse_svg_viewbox(svg_text: str) -> tuple[float, float, float, float]:
+    """Return numeric SVG viewBox coordinates or raise ValueError."""
+    try:
+        root = ElementTree.fromstring(svg_text)
+    except ElementTree.ParseError as exc:
+        raise ValueError(f"invalid SVG XML: {exc}") from exc
+
+    viewbox = root.attrib.get("viewBox")
+    if not viewbox:
+        raise ValueError("SVG lacks viewBox")
+
+    parts = re.split(r"[\s,]+", viewbox.strip())
+    if len(parts) != 4:
+        raise ValueError(f"SVG viewBox must contain four numbers: {viewbox!r}")
+
+    try:
+        x, y, width, height = (float(part) for part in parts)
+    except ValueError as exc:
+        raise ValueError(f"SVG viewBox contains a non-numeric value: {viewbox!r}") from exc
+
+    if width <= 0 or height <= 0:
+        raise ValueError("SVG viewBox width and height must be positive")
+    return x, y, width, height
 
 
 def markdown_files() -> list[Path]:
@@ -169,6 +202,10 @@ def local_links(text: str) -> list[str]:
         if not target or target.startswith(("http://", "https://", "mailto:", "#")):
             continue
         links.append(unquote(target))
+    for raw in re.findall(r"<img\s+[^>]*src=[\"']([^\"']+)[\"']", text, flags=re.IGNORECASE):
+        target = raw.split("#", 1)[0].strip()
+        if target and not target.startswith(("http://", "https://", "data:")):
+            links.append(unquote(target))
     return links
 
 
@@ -185,6 +222,38 @@ def check_links() -> list[str]:
                 continue
             if not resolved.exists():
                 errors.append(f"broken local link in {path.relative_to(ROOT)}: {target}")
+    return errors
+
+
+def check_banner() -> list[str]:
+    errors = []
+    path = ROOT / "assets" / "demure_fulcrum_banner.svg"
+    if not path.exists():
+        return ["SVG README banner missing"]
+
+    text = path.read_text(encoding="utf-8")
+    try:
+        _, _, width, height = parse_svg_viewbox(text)
+    except ValueError as exc:
+        return [str(exc)]
+
+    ratio = width / height
+    if width < 1600 or height < 500:
+        errors.append(f"SVG banner is too small: {width:g} x {height:g}")
+    if not 2.8 <= ratio <= 3.2:
+        errors.append(f"SVG banner aspect ratio is not approximately 3:1: {ratio:.3f}")
+    if "<title" not in text or "<desc" not in text:
+        errors.append("SVG banner lacks accessible title or description")
+
+    readme = (ROOT / "README.md").read_text(encoding="utf-8")
+    if "assets/demure_fulcrum_banner.svg" not in readme:
+        errors.append("README does not reference the SVG banner")
+    if "demure_fulcrum_banner.jpg" in readme:
+        errors.append("README still references the compressed JPG banner")
+
+    for rel in OBSOLETE_ASSETS:
+        if (ROOT / rel).exists():
+            errors.append(f"obsolete raster banner still present: {rel}")
     return errors
 
 
@@ -214,9 +283,45 @@ def check_main_structure() -> list[str]:
             errors.append(f"main paper missing required section or status: {phrase}")
     if "<!-- FIGURE:FULCRUM -->" not in text:
         errors.append("main paper lacks reproducible fulcrum figure marker")
+    if "../simulations/hexure_ipd_protocol.md" not in text:
+        errors.append("main paper does not link the formal simulation protocol")
     word_count = len(re.findall(r"\b\w+[\w'-]*\b", text))
     if word_count < 4500:
         errors.append(f"main paper is unexpectedly short: {word_count} words")
+    return errors
+
+
+def check_simulation_protocol() -> list[str]:
+    errors = []
+    path = ROOT / "simulations" / "hexure_ipd_protocol.md"
+    if not path.exists():
+        return ["simulation protocol missing"]
+    text = path.read_text(encoding="utf-8")
+    required_phrases = [
+        "no simulation results",
+        "Iterated Prisoner's Dilemma",
+        "H0 — No application-level advantage",
+        "NEG-v0.1",
+        "Mechanism ablations",
+        "Held-out robustness environments",
+        "False-sanction rate",
+        "Interpretation and rejection rules",
+        "does not establish the Demure Fulcrum as a psychological category",
+    ]
+    lowered = text.lower()
+    for phrase in required_phrases:
+        if phrase.lower() not in lowered:
+            errors.append(f"simulation protocol lacks: {phrase}")
+
+    if re.search(r"\b(results? (show|demonstrate|prove)|achieved|outperformed)\b", text, flags=re.IGNORECASE):
+        errors.append("simulation protocol appears to report results despite protocol-only status")
+
+    readme = (ROOT / "README.md").read_text(encoding="utf-8")
+    application = (ROOT / "applications" / "hexure.md").read_text(encoding="utf-8")
+    if "simulations/hexure_ipd_protocol.md" not in readme:
+        errors.append("README does not link the simulation protocol")
+    if "../simulations/hexure_ipd_protocol.md" not in application:
+        errors.append("Hexure application note does not link the simulation protocol")
     return errors
 
 
@@ -302,7 +407,9 @@ def main() -> int:
     errors.extend(bib_errors)
     errors.extend(check_citations(bib_keys))
     errors.extend(check_links())
+    errors.extend(check_banner())
     errors.extend(check_main_structure())
+    errors.extend(check_simulation_protocol())
     errors.extend(check_cff())
     errors.extend(check_old_paths())
     errors.extend(check_pdf(args.skip_pdf))
@@ -316,6 +423,11 @@ def main() -> int:
     print("VALIDATION PASSED")
     print(f"- {len(bib_keys)} unique BibTeX entries")
     print(f"- {len(markdown_files())} Markdown documents checked")
+    _, _, width, height = parse_svg_viewbox(
+        (ROOT / "assets" / "demure_fulcrum_banner.svg").read_text(encoding="utf-8")
+    )
+    print(f"- SVG banner present ({width:g} x {height:g})")
+    print("- simulation protocol present (results status: none reported)")
     if not args.skip_pdf:
         pdf = ROOT / "paper" / "The_Demure_Fulcrum_Academic_Paper.pdf"
         print(f"- PDF present ({pdf.stat().st_size:,} bytes)")
